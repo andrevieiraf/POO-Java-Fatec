@@ -1,8 +1,10 @@
 public class Churrasco {
 
-    double qtdCarne;
+    public Churrasco(double qtdCarne) {
+        this.qtdCarne = qtdCarne;
+    }
 
-    void verificarConsumo(Pessoa p1){
+    public void verificarConsumo(){
         if((p1.idade >= 0 && p1.idade <= 3) || p1.vegetariana){
             qtdCarne = 0;
         } else if (p1.idade >= 4 && p1.idade <= 12) {
@@ -10,5 +12,4 @@ public class Churrasco {
         } else
             qtdCarne = 2;
     }
-
 }
